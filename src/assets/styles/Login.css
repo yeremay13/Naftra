@@ -1,0 +1,101 @@
+/* LoginScreen.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3a3a3a; 
+}
+
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tarjeta de inicio de sesión */
+.login-card {
+    background-color: #1b1b1b;
+    border-radius: 30px;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del logo y título */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: block;
+    width: 100%;
+}
+
+/* Botones de inicio de sesión */
+.primary-button {
+    background-color: #af56e3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; 
+    width: 100%;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    background-color: #be44ff67;
+}
+
+
+/* Contenedor de los botones sociales */
+.social-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Botón de cada icono social */
+.social-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%; 
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px) scale(1.25);
+}
+
+/* Icono dentro de cada botón social */
+.social-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

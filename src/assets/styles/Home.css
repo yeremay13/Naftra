@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo general */
+.home {
+  background-color: #1c1c1c;
+  border-radius: 2cap;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  max-height: 300px; /* Altura máxima de la sección con scroll */
+  overflow-y: auto; /* Activa el desplazamiento vertical */
+  overflow-x: hidden; /* Deshabilita el desplazamiento horizontal en la sección */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.home::-webkit-scrollbar {
+  width: 8px;
+}
+
+.home::-webkit-scrollbar-thumb {
+ color: #b96ae6; 
+}
+
+.icon-btn,
+.calendar-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.calendar-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Secciones generales */
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.section h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  padding: 50px;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #b96ae6;
+  margin: 8px auto 0;
+}
+
+.trending-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.trending-btn img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.trending-btn img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px #b96ae6;
+}
+
+/* Añade el tooltip para mostrar el nombre */
+.trending-btn::after {
+  content: attr(data-artist-name); /* Extrae el valor del atributo data-artist-name */
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  font-weight: bolder;
+}
+
+/* Combina el tooltip con el hover */
+.trending-btn:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px); /* Suaviza el efecto */
+}
+
+
+
+
+/* News Flexbox */
+.news-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.news-btn {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.news-btn img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.news-btn:hover{
+  transform: translateY(0px) scale(1.05);
+}
+
+.news-btn::after {
+  content: attr(data-song-name);
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  transform: translateX(-10%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.news-btn:hover::after {
+  opacity: 1;
+}
+
+
+/* Media Query para móviles */
+@media (max-width: 767px) {
+  .news-flex {
+    flex-direction: row; 
+  }
+  .news-btn {
+    flex: 1 1 calc(40% - 10px); 
+    max-width: calc(40% - 10px);
+    margin: 10px;
+  }
+  .news-btn img {
+    max-height: 300px; 
+    object-fit: cover; 
+  }
+
+  .trending-btn {
+    padding: 20px;
+  }
+  .news-btn::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+
+/* Media Query para Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .news-btn {
+    flex: 1 1 calc(27% - 10px); 
+    max-width: calc(27% - 10px);
+    margin: 20px;
+  }
+  .trending-btn {
+    padding: 20px;
+  }
+
+  .trending-btn img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Media Query para Escritorio */
+@media (min-width: 1024px) {
+  .home {
+    padding: 40px;
+  }
+
+  .header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .trending-carousel {
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .trending-btn img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .trending-btn {
+    padding: 40px;
+  }
+
+  .news-btn {
+    flex: 1 1 calc(20% - 10px); 
+    max-width: calc(20% - 10px);
+    margin: 20px;
+  }
+
+  .news-btn img {
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed; /* Fija el fondo */
+    overflow-x: hidden;
+  }
+
+/* Estilos generales del header */
+.header2 {
+    background-color: #1c1c1c; 
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+/* Contenido dentro del header */
+.header2-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    padding: 0 20px; 
+}
+
+/* Logo del header */
+.header2-logo {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+/* Estilo para la imagen del logo */
+.header2-logo-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+}
+
+.header2-logo-image:hover {
+    transform: scale(1.1); 
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    .header2 {
+        padding: 10px 0; 
+    }
+
+    .header2-logo-image {
+        height: 40px; 
+    }
+}
+
+/* Ajustes para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header2 {
+        padding: 15px 0; 
+    }
+
+    .header-logo-image2 {
+        height: 45px; 
+    }
+}

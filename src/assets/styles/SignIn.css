@@ -1,0 +1,148 @@
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1c1c1c; 
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+/* Formulario */
+.sign-in-form {
+    background-color: #333; 
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Etiquetas y campos de entrada */
+.sign-in-form label {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.sign-in-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #222; 
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.sign-in-form input:focus {
+    outline: none;
+    border-color: #b96ae6; 
+}
+
+/* Enlace de olvido de contraseña */
+.forgot-password {
+    color: #b96ae6;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+/* Botones */
+.back-button,
+.continue-button {
+    padding: 12px 25px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    width: 48%; 
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.back-button {
+    background-color: #a364c9;
+}
+
+.back-button:hover {
+    background-color: #8c4baf;
+    transform: scale(1.05);
+}
+
+.continue-button {
+    background-color: #b96ae6;
+}
+
+.continue-button:hover {
+    background-color: #a04ed2;
+    transform: scale(1.05);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    .sign-in-form {
+        width: 90%; 
+    }
+
+    .sign-in-form label {
+        font-size: 0.85em;
+    }
+
+    .sign-in-form input {
+        font-size: 0.95em;
+    }
+
+    .forgot-password {
+        font-size: 0.8em;
+    }
+}
+
+/* Ajustes para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sign-in-form {
+        width: 80%; 
+        padding: 25px; 
+    }
+
+    .sign-in-form label {
+        font-size: 0.95em;
+    }
+
+    .sign-in-form input {
+        font-size: 1em;
+    }
+}
+
+/* Ajustes para escritorio */
+@media (min-width: 1024px) {
+    .sign-in-container {
+        padding: 40px; 
+    }
+
+    .sign-in-form {
+        width: 400px; 
+    }
+}
