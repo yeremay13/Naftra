@@ -1,26 +1,36 @@
-<h1 align="center">RHLM</h1>
-<p align="center"><img src="https://e0.pxfuel.com/wallpapers/142/347/desktop-wallpaper-real-hasta-la-muerte-reggaeton.jpg"/></p> 
+<h1 align="center">Naftra</h1>
+<p align="center"><img src="Nlogo3.png" alt="Naftra Logo" width="300"/></p> 
 
 ## Table of Contents:
 ---
 
 - [Description and Context](#description-and-context)
+- [Features](#features)
+- [Technologies](#technologies)
 - [Author(s)](#authors)
-- [Additional Information](#additional-information)
 
 ## Description and Context
 ---
-This is a project built with React about Anuel AA and his music. The purpose is to provide a reference website for his hits or at least his achievements to date.
+This project is a React-based web application designed to showcase detailed information about trendings or news, including a dynamic comments section for each page. Users can explore trendings, leave comments, and interact with related content through a seamless interface.
 
-## Author(s)
+## Features
+---
+- **Dynamic Pages**: Each `InfoX.jsx` page provides specific information about an album or song.
+- **Comment Management**:
+  - Add, edit, and delete comments.
+  - Comments are stored locally using `IndexedDB`.
+- **Related Content**: Links and previews of related albums or songs.
+- **Platform Modal**: A modal allows users to choose their preferred streaming platform, including Spotify, YouTube, and Apple Music.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+
+## Technologies
+---
+- **Frontend**: React.js
+- **Styling**: Custom CSS
+- **Local Storage**: IndexedDB for persistent data
+- **Routing**: React Router
+
+## Author
 ---
 Yeremay Araña Betancor
 
-## Additional Information
----
-This page is inspired by the following Figma designs:
-- [Music Webapp Landing Page (Community)](https://www.figma.com/file/seg5QrchUcAvTuu4wVcazh/Music-Webapp-Landing-Page-(Community)?type=design&node-id=0-1&mode=design&t=EJjKVkZPueL7lQW2-0)
-- [UI Music Website](https://www.figma.com/community/file/1102658373240576308/ui-music-website?searchSessionId=lv5ik2l6-ud7u0h36gel)
-
-## Web
-https://anuel-aa-e46c0.web.app/
