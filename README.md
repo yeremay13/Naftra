@@ -1,5 +1,5 @@
 <h1 align="center">Naftra</h1>
-<p align="center"><img src="https://github.com/yeremay13/Naftra/blob/master/public/Nlogo3.png?raw=true" alt="Naftra Logo" width="300"/></p> 
+<p align="center"><img src="https://github.com/yeremay13/Naftra/blob/master/public/Nlogo3.png?raw=true" alt="Naftra Logo" width="100"/></p> 
 
 ## Table of Contents:
 ---
