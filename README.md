@@ -7,6 +7,7 @@
 - [Description and Context](#description-and-context)
 - [Features](#features)
 - [Technologies](#technologies)
+- [How to Run](#how-to-run)
 - [Author(s)](#authors)
 
 ## Description and Context
