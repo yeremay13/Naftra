@@ -30,6 +30,19 @@ This project is a React-based web application designed to showcase detailed info
 - **Local Storage**: IndexedDB for persistent data
 - **Routing**: React Router
 
+## How to Run
+---
+To set up and run the Naftra project locally, follow these steps:
+
+### Prerequisites:
+- Ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
+
+### Steps:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yeremay13/Naftra.git
+   cd Naftra
+
 ## Author
 ---
 Yeremay Araña Betancor
